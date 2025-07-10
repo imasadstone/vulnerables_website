@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #faf7f2;
+    color: #333;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 5vw 0 5vw;
+    background: #fff;
+}
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    color: #444;
+    font-weight: 700;
+}
+.logo span {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: .55em;
+    color: #bbb;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-left: 8px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+nav a {
+    color: #7c6f5c;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05em;
+    margin: 0 8px;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #e6724c;
+}
+.blog-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 38px 0;
+}
+.blog-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 22px rgba(80,70,60,0.09);
+    width: 340px;
+    max-width: 94vw;
+    transition: box-shadow 0.23s;
+    display: flex;
+    flex-direction: column;
+}
+.blog-card:hover {
+    box-shadow: 0 8px 36px #df1f1b;
+}
+.blog-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background: #eee;
+}
+.blog-card-content {
+    padding: 22px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+}
+.blog-category {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #e6724c;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: #e6724c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.15em;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 24px 0 0 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: background 0.18s, color 0.18s;
+}
+.back-btn:hover {
+    background: #b65b31;
+    color: #ffe;
+}
+.back-btn i {
+    font-size: 1.1em;
+}

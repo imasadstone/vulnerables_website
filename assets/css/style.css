@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: url('../images/background.jpg') center center/cover no-repeat;
+    color: #fff;
+}
+body.user-bg {
+    background: url('../images/user_background.png') center center/cover no-repeat;
+}
+.header {
+    background: rgba(0,0,0,0.7);
+    position: relative;
+    z-index: 100;
+    padding: 30px 0;
+}
+.manga-text {
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #02c18b;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Arial, sans-serif;
+    text-shadow: 2px 2px 8px #000, 0 2px 8px #ff2e9270;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+.navbar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+.navbar-bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-menu {
+    display: flex;
+    gap: 18px;
+    flex: 1;
+}
+.nav-menu > li {
+    list-style: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+.nav-link, .dropdown-btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 12px 20px;
+    border-radius: 24px;
+    transition: background 0.2s, color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.dropdown-btn.active {
+    background: #ff2e92;
+    color: #fff;
+}
+.nav-menu > li > .nav-link:hover {
+    background: none !important;
+    color: #e66e0b !important;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    background: rgba(20,20,20,0.97);
+    min-width: 180px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border-radius: 12px;
+    z-index: 200;
+    flex-direction: column;
+    padding: 10px 0;
+    animation: fadeIn 0.2s;
+}
+.dropdown-content a {
+    color: #eee;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s;
+    font-size: 1em;
+}
+.dropdown-content a:hover {
+    background: #ff2e92;
+    color: #fff;
+}
+.nav-menu > li.show .dropdown-content {
+    display: flex;
+}
+.user-icon, .search-icon {
+    color: #fff;
+    background: #1065c7;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.user-icon {
+    margin-left: 10px;
+}
+.search-icon {
+    background: none;
+    color: #fff;
+    margin-left: 10px;
+}
+.manga {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.manga-content {
+    position: relative;
+    z-index: 2;
+}
+.manga-title {
+    font-size: 4.5em;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    margin: 0;
+    color: #0404c9;
+}
+.manga-title span {
+    color: #ff2e92;
+}
+.manga-subtitle {
+    font-size: 1.25em;
+    color: #eaeaea;
+    letter-spacing: 0.15em;
+    margin: 18px 0;
+}
+.user-greeting {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.06em;
+    border-radius: 999px;
+    padding: 10px 20px;
+    margin-left: 8px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+}
+.user-email {
+    color: #dbdb09;
+    font-weight: 600;
+    margin-left: 3px;
+    word-break: break-all;
+}
+.signout-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.2em;
+    margin-left: 50px;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+.signout-btn:hover {
+    color: #ff2e92;
+}
+.signout-btn .fa-sign-out-alt {
+    margin-right: 5px;
+}
